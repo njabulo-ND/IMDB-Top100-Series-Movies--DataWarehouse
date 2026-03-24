@@ -1,17 +1,37 @@
 import requests
 import json
-url = "https://imdb146.p.rapidapi.com/v1/find/"
+import os
+from dotenv import load_dotenv
 
-querystring = {"query":"brad"}
 
+# Code snippet from rapidapi
+project_dir = os.getcwd()
+env_path =  os.path.join(project_dir,".env")
+url = "https://imdb-top-100-movies.p.rapidapi.com/"
+load_dotenv(dotenv_path=env_path)
+print(os.getenv('API_KEY'))
 headers = {
-	"x-rapidapi-key": "0bc6596902msh3e6ec4940e271bbp1e4fa8jsn48fb9f4c4553",
-	"x-rapidapi-host": "imdb146.p.rapidapi.com",
+	"x-rapidapi-key":os.getenv('API_KEY'),
+	"x-rapidapi-host": "imdb-top-100-movies.p.rapidapi.com",
 	"Content-Type": "application/json"
 }
 
-response = requests.get(url, headers=headers, params=querystring)
-print(response.status_code)
-data = response.json()
-with open(r"data\raw_data.json",'w') as raw_data:
-    json.dump(data,raw_data,indent=4)
+# Calling out the Find API
+def extractingFromFIND(url, headers): 
+    try:
+        response = requests.get(url, headers=headers)
+        print(response.status_code)
+        data = response.json()
+        # Storing the data to the raw_data_json
+        with open(r"data\raw_data.json", 'w') as raw_data:
+            json.dump(data, raw_data, indent=4)
+    except requests.RequestException as e:
+        print(f"Error occured:\n{e}")
+    except FileNotFoundError:
+        print(f'File not found')
+    except json.JSONDecodeError as e:
+        print(f'Error occured:\n{e}')
+    except Exception as e:
+        print(f'Error occured:\n{e}')
+        
+extractingFromFIND(url,headers)
