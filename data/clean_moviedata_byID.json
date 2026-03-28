@@ -1,0 +1,42 @@
+[
+    {
+        "id": "top1",
+        "trailer": "https://www.youtube.com/watch?v=NmzuHjWmXOc",
+        "trailer_embed_link": "https://www.youtube.com/embed/NmzuHjWmXOc",
+        "trailer_youtube_id": "NmzuHjWmXOc",
+        "director": "Frank Darabont",
+        "writers": "Stephen King(based on the short novel \"Rita Hayworth and the Shawshank Redemption\" by), Frank Darabont(screenplay by)"
+    },
+    {
+        "id": "top2",
+        "trailer": "https://www.youtube.com/watch?v=rqGJyUB1Q3s",
+        "trailer_embed_link": "https://www.youtube.com/embed/rqGJyUB1Q3s",
+        "trailer_youtube_id": "rqGJyUB1Q3s",
+        "director": "Francis Ford Coppola",
+        "writers": "Mario Puzo(screenplay by), Francis Ford Coppola(screenplay by)"
+    },
+    {
+        "id": "top3",
+        "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+        "trailer_embed_link": "https://www.youtube.com/embed/EXeTwQWrcwY",
+        "trailer_youtube_id": "EXeTwQWrcwY",
+        "director": "Christopher Nolan",
+        "writers": "Jonathan Nolan(screenplay), Christopher Nolan(screenplay), David S. Goyer(story)"
+    },
+    {
+        "id": "top4",
+        "trailer": "https://www.youtube.com/watch?v=9O1Iy9od7-A",
+        "trailer_embed_link": "https://www.youtube.com/embed/9O1Iy9od7-A",
+        "trailer_youtube_id": "9O1Iy9od7-A",
+        "director": "Francis Ford Coppola",
+        "writers": "Francis Ford Coppola(screenplay by), Mario Puzo(screenplay by)"
+    },
+    {
+        "id": "top5",
+        "trailer": "https://www.youtube.com/watch?v=TEN-2uTi2c0",
+        "trailer_embed_link": "https://www.youtube.com/embed/TEN-2uTi2c0",
+        "trailer_youtube_id": "TEN-2uTi2c0",
+        "director": "Sidney Lumet",
+        "writers": "Reginald Rose(teleplay \"Twelve Angry Men\")"
+    }
+]
